@@ -1,0 +1,24 @@
+{
+    "name": "Highlighter",
+    "version": "1.0",
+    "description": "This is a Chrome extension that allows users to easily highlight text in the web browser",
+    "manifest_version": 3,
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}

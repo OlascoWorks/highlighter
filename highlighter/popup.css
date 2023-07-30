@@ -1,0 +1,139 @@
+body {
+    width: 300px;
+    height: 450px;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+/* popup home page styles */
+#highlight-container {
+    margin: auto;
+    max-width: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group {
+    max-height: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.highlight-item {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0-4px 8px -4px rgba(0, 0, 0, 0.25) inset,
+      0 4px 4px rgba(0, 0, 0, 0.25) inset,
+      8px 4px 4px rgba(225, 225, 225, 0.4) inset;
+    width: 256.5px;
+    height: 75px;
+    padding:  15px;
+    padding-top: 0%;
+    box-sizing: border-box;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.color-selector {
+    width: 8%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.25);
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+}
+
+#Yellow {
+    background-color: yellow;
+}
+#Red {
+    background-color: red;
+}
+#Green {
+    background-color: green;
+}
+
+h5 {
+    margin-bottom: 0;
+}
+
+.selected {
+    width: 16px;
+    height: 16px;
+    border: 1px;
+    border-color: black;
+    border-style: double;
+    border-spacing: 2px;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
+    width: 70%;
+    text-align: center;
+}
+
+#highlight-container {
+    margin-top: 50px;
+    width: 80%;
+}
+
+
+/* highlight display page styles */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+label {
+    font-size: medium;
+    font-weight: normal;
+}
+
+#form-text, #name, #note {
+    height: fit-content;
+    padding: 5px;
+    border: 1.2px solid #818181;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+#btn-container {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid #000;
+}
+
+#back, #submit, #delete {
+    cursor: pointer;
+}
